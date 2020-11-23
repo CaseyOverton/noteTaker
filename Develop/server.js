@@ -2,7 +2,7 @@ var express = require('express');
 var apiRoute = require('./routes/apiRoutes')
 var htmlRoute = require('./routes/htmlRoutes')
 var app = express();
-// add var PORT 
+var PORT = process.env.PORT || 3001;
 
  app.use(express.json())
  app.use(express.urlencoded({extended:true}))
